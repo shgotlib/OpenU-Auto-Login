@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Save your Open University details for the next login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="jquery.js"></script>
+        <script src="popup.js"></script>
+    </head>
+    <body>
+        <h2 class="form-signin-heading">Insert your login details</h2>
+        <hr>
+        <form class="form-signin" id="form">
+            <div class="form-group">
+                <label for="username" class="">Username</label>
+                <input class="form-control" type="text" name="username" id="username">
+            </div>
+            <div class="form-group">
+                <label for="password" class="">password</label>
+                <input class="form-control" type="password" name="password" id="password">
+            </div>
+            <div class="form-group">
+                <label for="userId" class="">ID</label>
+                <input class="form-control" type="tel" name="userId" id="userId">
+            </div>
+            <input type="checkbox" id="auto-submit" name="auto-submit"> Login Automatically
+            <button type="submit" class="btn btn-lg btn-primary btn-block" id="submit" name="submit">Save</button>
+        </form>
+        <hr>
+        <a id="link">Sheilta</a>
+        <a id="remove">Clear Data</a>
+    </body>
+    <style>
+        h2.form-signin-heading {
+            text-align: center;
+            color: #000870;
+        }
+        .form-signin {
+            max-width: 330px;
+            margin: 0 auto;
+        }
+        .form-signin .form-signin-heading, .form-signin .checkbox {
+            margin-bottom: 10px;
+        }
+        .form-signin .form-control {
+            position: relative;
+            height: auto;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 2px;
+            font-size: 16px;
+        }
+        .form-control {
+            display: block;
+            height: 34px;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+            -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        }
+        .btn-block {
+            display: block;
+            width: 100%;
+        }
+        .btn-group-lg>.btn, .btn-lg {
+            padding: 10px 16px;
+            font-size: 18px;
+            line-height: 1.3333333;
+            border-radius: 6px;
+        }
+        .btn-primary {
+            color: #fff;
+            background-color: #337ab7;
+            border-color: #2e6da4;
+        }
+        .btn {
+            display: inline-block;
+            padding: 6px 12px;
+            margin-bottom: 0;
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+        label {
+            font-size: 15px;
+            margin: 3px 3px;
+            display: inline-block;
+        }
+        a#remove:hover {
+            text-decoration: underline;
+            color: red;
+        }
+        button#submit:hover, a#link:hover {
+            background: gray;
+        }
+        a#remove {
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            float: left;
+            text-align: center;
+            margin: 5px 0;
+        }
+        a#to-site:hover {
+            color: black;
+            text-decoration: none;
+        }
+        a#to-site {
+            text-align: center;
+            width: 100%;
+            display: block;
+            margin: 10px 0;
+            color: #337ab7;
+        }
+        a#link {
+            width: 50%;
+            display: block;
+            text-align: center;
+            margin: 9px auto 0;
+            font-size: 14px;
+            background: #337ab7;
+            padding: 3px;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</html>
